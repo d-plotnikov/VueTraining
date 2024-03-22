@@ -1,4 +1,4 @@
-import { createWebHistory, createRouter } from "vue-router";
+import { createMemoryHistory, createRouter } from 'vue-router'
 import MainPage from '@/pages/MainPage.vue';
 import TestingPage from '@/pages/TestingPage.vue';
 import AbuseName from '@/pages/AbuseName.vue';
@@ -27,7 +27,7 @@ const routes = [
 
 const router = createRouter({
   fallback: false,
-  history: createWebHistory(),
+  history: createMemoryHistory(),
   routes,
 });
 

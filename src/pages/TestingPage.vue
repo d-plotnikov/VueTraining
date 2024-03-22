@@ -41,8 +41,6 @@
 
 
     </div>
-</div>
-<div class="container">
     <button class="btn absolute test__btn" v-if="btnAccept" @click="acceptAnswer()">Принять</button>
     <button class="btn absolute test__btn" v-if="btnNext" @click="nextAnswer()">Следующий вопрос</button>
     <div v-if="counterItems == testArray.length && counterItems == counterCorrect">
@@ -54,6 +52,9 @@
         <button class="btn absolute test__btn" @click="resetTest()">Заново</button>
     </div>
 </div>
+
+
+
 
 </template>
 
@@ -77,27 +78,10 @@ data: function () {
 computed: {
     /*Перемешиваем массив*/
     testArray: function () {
-        return this.shuffling(this.items);
+        return this.items;
     }
 },
 methods: {
-    shuffling: function (data) {
-            data.sort(function () {
-                return Math.random() - 0.5;
-            });
-
-            data.forEach(function (item) {
-                item.answers.forEach(function (answer) {
-                    answer.selected = false;
-                });
-
-                item.answers.sort(function () {
-                    return Math.random() - 0.5;
-                })
-            })
-
-        return data;
-    },
     isTarget: function ($event, key, type) {
         
         var arrayItems = this.testArray[[this.counterItems]];
@@ -126,7 +110,7 @@ methods: {
         this.btnAccept = false;
         this.btnNext = true;
 
-        var arrayItems = this.testArray[[this.counterItems]];
+        var arrayItems = this.testArray[this.counterItems];
         var checkItems = arrayItems.answers;
         var currCorrect = 0;
         
