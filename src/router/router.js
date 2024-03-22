@@ -6,10 +6,10 @@ import Search from '@/pages/Search.vue';
 import News from '@/pages/News.vue';
 import Todo from '@/pages/Todo.vue';
 import DragAndDrop from '@/pages/DragAndDrop.vue';
-import ChatGpt from '@/pages/ChatGpt.vue';
 import GsapScroll from '@/pages/GsapScroll.vue';
 import GsapGorizontalScroll from '@/pages/GsapGorizontalScroll.vue';
-import SliderGpt from '@/pages/SliderGpt.vue';
+import Slider from '@/pages/Slider.vue';
+import Vuex from '@/pages/Vuex.vue';
 
 const routes = [
   { name: 'main', component: MainPage, path: '/' },
@@ -19,10 +19,10 @@ const routes = [
   { name: 'news', component: News, path: '/news' },
   { name: 'todo', component: Todo, path: '/todo' },
   { name: 'drag&drop', component: DragAndDrop, path: '/drag&drop' },
-  { name: 'chatgpt', component: ChatGpt, path: '/chatgpt' },
   { name: 'gsapscroll', component: GsapScroll, path: '/gsapscroll' },
   { name: 'gsapgorscroll', component: GsapGorizontalScroll, path: '/gsapgorscroll' },
-  { name: 'slidergpt', component: SliderGpt, path: '/slidergpt' },
+  { name: 'slider', component: Slider, path: '/slider' },
+  { name: 'vuex', component: Vuex, path: '/vuex' },
 ];
 
 const router = createRouter({

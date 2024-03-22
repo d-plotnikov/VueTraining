@@ -1,7 +1,7 @@
 <template>
 <div class="container">
-    <h2 class="h2 search">Реализация поиска, пагинации, API, передача в store кол-ва постов</h2>
-    <h3>Кол-во постов: <span class="num-posts">{{ $store.state.count }}</span></h3>
+    <h2 class="h2 search">Реализация поиска, пагинации, API</h2>
+    <h3>Кол-во постов: <span class="num-posts">{{ countCards }}</span></h3>
       <div class="container title">
         <div class="card search">
         <input class="input search__input" name="display_name" placeholder="Введите данные для поиска" type="text" v-model="search">
@@ -15,7 +15,6 @@
 <script>
 import Paginate from '@/components/Paginate.vue';
 import BasePost from '@/components/BasePost.vue';
-
 
 export default {
 name: 'searchInput',
@@ -37,17 +36,12 @@ computed: {
         return this.todosByTitle.slice(offset, offset + this.cardPerPage)
     },
     countCards() {
-        this.countStateCard(this.todosByTitle.length)
+
         return this.todosByTitle.length
     },
 },
 methods: {
-    countStateCard(data){
-        this.$store.commit(
-            "addToCardNumber",
-            data
-        )
-    },
+
 },
 beforeMount() {
     fetch('https://jsonplaceholder.typicode.com/posts')

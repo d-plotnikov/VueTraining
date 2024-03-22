@@ -15,7 +15,7 @@ export default [
             current: true,
         },
         {
-            title: 'Поиск, пагинация, API, передача в store кол-ва постов',
+            title: 'Поиск, пагинация, API',
             name: 'search',       
             current: true,
         },
@@ -35,11 +35,6 @@ export default [
             current: true,
         },
         {
-            title: 'Написал Chat GPT',
-            name: 'chatgpt',       
-            current: true,
-        },
-        {
             title: 'Горизонтальный скролл GSAP',
             name: 'gsapgorscroll',       
             current: true,
@@ -50,8 +45,13 @@ export default [
             current: true,
         },
         {
-            title: 'Slider написал GPT',
-            name: 'slidergpt',       
+            title: 'Slider',
+            name: 'slider',       
+            current: true,
+        },
+        {
+            title: 'Работа с Vuex',
+            name: 'vuex',       
             current: true,
         },
 ]

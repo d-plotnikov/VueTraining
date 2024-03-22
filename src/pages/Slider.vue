@@ -30,23 +30,23 @@ export default {
     return {
       items: [
             {
-                title: 'Этот',
+                title: 'Это',
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti animi quibusdam sit voluptatum id.'
             }, 
             {
-                title: 'слайдер',
+                title: 'простейший',
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti animi quibusdam sit voluptatum id.'
             },        
             {
-                title: 'написал',
+                title: 'slider',
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti animi quibusdam sit voluptatum id.'
             },        
             {
-                title: 'ChatGPT',
+                title: 'на',
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti animi quibusdam sit voluptatum id.'
             },
             {
-                title: 'но пришлось немного доработать',
+                title: 'Vue',
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti animi quibusdam sit voluptatum id.'
             },
       ],

@@ -13,9 +13,6 @@
         </template>
     </draggable>
 
-    <button class="btn" v-if="btnAccept" @click="accept()">
-            Принять ответ
-    </button>
 
 </div>
 </template>
@@ -49,10 +46,7 @@ methods: {
     shuffle(data) {
         data.sort(() => Math.random() - 0.5);
     },
-    checkMove: function(evt){
-        this.btnAccept = true,
-        console.log(evt.draggedContext.element.position);
-    },
+
 },
 }
 </script>

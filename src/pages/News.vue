@@ -20,7 +20,7 @@ data() {
     return {
         posts,
         page: 1,
-        cardPerPage: 5,
+        cardPerPage: 4,
     };
 },
 computed: {
